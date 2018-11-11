@@ -29,6 +29,14 @@
 // console.log(account1.withdrawMoney(25));
 // console.log(account1.showBalance());
 
+// example 2
+// class Rectangle {
+//   constructor(height, width) {
+//     this.height = height;
+//     this.width = width;
+//   }
+// }
+
 
 //ANOTHER GREAT CLASS EXAMPLE for a grocery store selection
 class Product {
@@ -83,3 +91,14 @@ const loudFoods = foods.map(singleFood => {
 });
 console.log(loudFoods);
 
+function inc(number, increment = 1) {
+  return number + increment;
+}
+console.log(inc(2, 2)); // 4
+console.log(inc(2)); // 3
+
+function sum (a, b = 2, c) {
+  return a + b + c;
+}
+console.log(sum(1, 5, 10));         // 16 -> b === 5
+console.log(sum(1, undefined, 10)); // 13 -> b as default
